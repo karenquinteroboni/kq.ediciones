@@ -224,3 +224,18 @@ em{font-style:italic;color:var(--clay)}
 .policy li::before{content:counter(p);position:absolute;left:0;top:-2px;width:28px;height:28px;border-radius:50%;background:var(--sage);color:var(--forest);font:700 .8rem/28px var(--sans);text-align:center}
 .policy b{color:var(--forest)}
 @media (max-width:760px){.conds,.policy{grid-template-columns:1fr}}
+
+/* Movimiento suave en las ilustraciones */
+@keyframes drift{from{transform:scale(1)}to{transform:scale(1.07) translateY(-1.5%)}}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.6)}50%{opacity:1;transform:scale(1.15)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.g img{animation:drift 14s ease-in-out infinite alternate}
+.g:nth-child(2n) img{animation-duration:18s;animation-delay:-4s}
+.g:nth-child(3n) img{animation-duration:16s;animation-delay:-8s}
+.phone--side{animation:floaty 7s ease-in-out infinite}
+.phone--side:last-child{animation-delay:-3.5s}
+.hero__phones{position:relative}
+.hero__phones::before,.hero__phones::after{content:"✦";position:absolute;color:var(--clay-soft);animation:twinkle 3.6s ease-in-out infinite;pointer-events:none}
+.hero__phones::before{top:4%;left:6%;font-size:1.6rem}
+.hero__phones::after{bottom:14%;right:4%;font-size:1.1rem;animation-delay:-1.8s}
+@media (prefers-reduced-motion:reduce){.g img,.phone--side,.hero__phones::before,.hero__phones::after{animation:none}}
