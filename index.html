@@ -14,8 +14,9 @@
 <link rel="icon" href="assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Pinyon+Script&family=Parisienne&family=Great+Vibes&family=Playfair+Display:wght@400;500&family=Libre+Baskerville:ital,wght@0,400;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/demos.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Karen Quintero · Invitaciones digitales","areaServed":"CO","telephone":"+573041027425","priceRange":"$80.000 - $200.000 COP"}
 </script>
@@ -28,9 +29,11 @@
     <a href="#top" class="nav__logo" aria-label="Karen Quintero, inicio"><img src="assets/img/logo-cream.png" alt="Karen Quintero" width="130" height="98"></a>
     <nav class="nav__links" id="menu" aria-label="Principal">
       <a href="#trabajos">Trabajos</a>
+      <a href="#demos">Demos</a>
       <a href="#paquetes">Paquetes</a>
       <a href="#comparar">Comparar</a>
       <a href="#proceso">Cómo funciona</a>
+      <a href="#condiciones">Condiciones</a>
       <a href="#preguntas">Preguntas</a>
       <a class="btn btn--clay btn--sm" href="#contacto">Cotiza tu invitación</a>
     </nav>
@@ -107,6 +110,26 @@
       <figure class="g"><img src="assets/img/boda-07.webp" alt="Beso de los novios bajo el velo" loading="lazy"></figure>
       <figure class="g g--wide"><img src="assets/img/boda-01.webp" alt="Novios en el altar de una iglesia" loading="lazy"></figure>
     </div>
+  </div>
+</section>
+
+<!-- DEMOS -->
+<section class="sec sec--forest" id="demos">
+  <div class="wrap">
+    <header class="sec__head sec__head--center">
+      <p class="label label--soft">Demos</p>
+      <h2>Recorre una invitación <em>como la verán tus invitados</em></h2>
+      <p class="lead lead--dark">Son invitaciones de ejemplo, con datos ficticios, basadas en trabajos reales. Toca el celular, usa el menú o dale a «Reproducir recorrido».</p>
+    </header>
+    <div class="tabs tabs--center" role="tablist" aria-label="Elige una demo">
+      <button role="tab" aria-selected="true" data-dtab="premium">Premium · XV años</button>
+      <button role="tab" aria-selected="false" data-dtab="xv">Interactivo · XV años</button>
+      <button role="tab" aria-selected="false" data-dtab="boda">Interactivo · Boda</button>
+    </div>
+    <div class="tour" data-demo="premium" data-badge="Paquete 03 · Premium" data-title="XV años con confirmación de invitados"></div>
+    <div class="tour" data-demo="xv" data-badge="Paquete 02 · Interactivo" data-title="XV años con estilo propio" hidden></div>
+    <div class="tour" data-demo="boda" data-badge="Paquete 02 · Interactivo" data-title="Boda con galería y ubicación" hidden></div>
+    <p class="note note--light">Nombres, lugares y fechas son ficticios. Cada invitación real se diseña con la paleta y el estilo de tu evento.</p>
   </div>
 </section>
 
@@ -267,6 +290,39 @@
   </div>
 </section>
 
+<!-- CONDICIONES -->
+<section class="sec sec--sage" id="condiciones">
+  <div class="wrap">
+    <header class="sec__head sec__head--center">
+      <p class="label">Condiciones del servicio</p>
+      <h2>Entrega, pago y <em>cambios</em></h2>
+      <p class="lead">Para que sepas qué esperar desde el primer mensaje.</p>
+    </header>
+    <div class="conds">
+      <article class="cond">
+        <h3>Tiempo de entrega</h3>
+        <p class="cond__big">2 a 5 días hábiles</p>
+        <p>El plazo depende de las correcciones que se necesiten y de que nos envíes completos la información y las fotografías.</p>
+      </article>
+      <article class="cond">
+        <h3>Forma de pago</h3>
+        <p class="cond__big">Llave bancaria</p>
+        <p>Pagas por transferencia a una llave bancaria. Te la enviamos por WhatsApp cuando confirmes tu pedido.</p>
+      </article>
+      <article class="cond cond--wide">
+        <h3>Política de cambios y correcciones</h3>
+        <ol class="policy">
+          <li><b>Antes de aprobar.</b> Te enviamos la invitación para que la revises. Este es el momento de pedir correcciones; el paquete Premium incluye 2 rondas de ajustes.</li>
+          <li><b>Errores de nuestra parte.</b> Si algo no coincide con la información que nos enviaste, lo corregimos sin costo.</li>
+          <li><b>Revisa tus datos.</b> Fechas, horas, nombres y direcciones son responsabilidad de quien contrata. Confírmalos antes de aprobar.</li>
+          <li><b>Después de aprobar.</b> Los cambios adicionales pueden tener un costo extra, según la edición de la tarjeta que requieran. Te informamos el valor antes de hacerlos.</li>
+          <li><b>Lista de invitados (Premium).</b> Los cambios en la lista de invitados se realizan sin costo en el paquete Premium, que incluye el manejo de invitados.</li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="sec" id="preguntas">
   <div class="wrap wrap--narrow">
@@ -277,9 +333,11 @@
     <div class="faq">
       <details><summary>¿Qué diferencia hay entre video y página web?</summary><p>El video es una pieza corta que se envía directo por WhatsApp. La página web se abre con un enlace e incluye música, cuenta regresiva, menú, galería y botón de WhatsApp. Funciona en celular y computador.</p></details>
       <details><summary>¿Qué necesito para empezar?</summary><p>La fecha, el lugar y el estilo que imaginas. Después te pediremos tus fotografías (verticales y de buena calidad) y los datos del evento.</p></details>
-      <details><summary>¿Puedo pedir cambios?</summary><p>Sí. El paquete Premium incluye 2 rondas de ajustes. Si necesitas ajustes en otro paquete, escríbenos y lo hablamos.</p></details>
+      <details><summary>¿Puedo pedir cambios?</summary><p>Sí. Antes de aprobar puedes pedir correcciones, y el paquete Premium incluye 2 rondas de ajustes. Después de aprobar, los cambios adicionales pueden tener costo; lo explicamos en la <a href="#condiciones">política de cambios</a>.</p></details>
       <details><summary>¿Cómo se la envío a mis invitados?</summary><p>Por WhatsApp o redes sociales. El video se comparte como archivo y la página web, como un enlace.</p></details>
       <details><summary>¿Cómo gestiono las confirmaciones?</summary><p>Con el paquete Premium recibes un enlace con un formulario donde tus invitados confirman su asistencia y el número de acompañantes. En los otros paquetes pueden escribirte por WhatsApp.</p></details>
+      <details><summary>¿Cuánto tarda y cómo se paga?</summary><p>La entrega toma de 2 a 5 días hábiles, según las correcciones. El pago se hace por llave bancaria. Mira el detalle en <a href="#condiciones">condiciones del servicio</a>.</p></details>
+      <details><summary>¿Qué pasa si necesito cambios después de aprobar?</summary><p>Los cambios adicionales pueden tener un costo extra según lo que requiera la edición de la tarjeta; te avisamos antes de hacerlos. En el paquete Premium, los cambios en la lista de invitados no tienen costo.</p></details>
       <details><summary>¿Trabajan solo en Colombia?</summary><p>Sí, nuestro servicio y precios están pensados para celebraciones en Colombia. Los valores son en pesos colombianos.</p></details>
     </div>
   </div>
@@ -333,5 +391,6 @@
 </a>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/demos.js"></script>
 </body>
 </html>

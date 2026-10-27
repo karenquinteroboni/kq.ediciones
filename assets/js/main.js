@@ -16,9 +16,9 @@
   });
 
   // Pestañas de la galería
-  $$('.tabs button').forEach(function (b) {
+  $$('.tabs button[data-tab]').forEach(function (b) {
     b.addEventListener('click', function () {
-      $$('.tabs button').forEach(function (x) { x.setAttribute('aria-selected', x === b); });
+      $$('.tabs button[data-tab]').forEach(function (x) { x.setAttribute('aria-selected', x === b); });
       ['xv', 'boda'].forEach(function (k) { $('#gal-' + k).hidden = k !== b.dataset.tab; });
     });
   });
